@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backend Developer Landing Page</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to bottom, #f7f9fc, #eaeff5);
+            color: #333;
+        }
+
+        /* Container Styling */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header Styling */
+        header {
+            width: 100%;
+            padding: 20px;
+            background: #1a1f36;
+            color: #fff;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        /* Hero Section */
+        .hero {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 20px;
+        }
+
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .hero-content h2 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+            color: #1a1f36;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            color: #555;
+        }
+
+        .hero-content a {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1rem;
+            color: #fff;
+            background: linear-gradient(to right, #0066cc, #0099ff);
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .hero-content a:hover {
+            background: linear-gradient(to right, #004699, #006bb3);
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Troubleshooting Section */
+        .troubleshooting {
+            margin-top: 40px;
+            text-align: left;
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .troubleshooting h3 {
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .troubleshooting ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .troubleshooting ul li {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .troubleshooting ul li span {
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+        /* Contact Section */
+        .contact {
+            margin-top: 40px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .contact h3 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .contact span {
+            color: #0066cc;
+            font-weight: bold;
+        }
+
+        /* Footer Styling */
+        footer {
+            margin-top: 40px;
+            padding: 15px;
+            background: #1a1f36;
+            color: #fff;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-content, .hero-image {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Hello, I am Edu-Link Backend</h1>
+</header>
+
+<div class="container">
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Hello is Everything fine</h2>
+            <p>
+                Hi! I’m Induma Wijesinghe. If there is any error, server not responding, or any other issue, please contact me for immediate assistance.
+            </p>
+            <a href="#">Learn More</a>
+        </div>
+        <div class="hero-image">
+            <img src="https://static.vecteezy.com/system/resources/thumbnails/058/162/806/small_2x/dramatic-modern-a-futuristic-data-center-filled-with-servers-and-blinking-lights-illuminated-by-a-cool-blue-light-rendered-in-a-technical-architectural-style-4k-png.png" alt="Futuristic Backend Design">
+        </div>
+    </section>
+
+    <section class="troubleshooting">
+        <h3>Troubleshooting Tips</h3>
+        <ul>
+            <li><span>Check Internet Connectivity:</span> Ensure your device has a stable internet connection.</li>
+            <li><span>Server Status:</span> Verify if the server is online and operational.</li>
+            <li><span>Clear Cache:</span> Clear your browser cache to resolve loading issues.</li>
+            <li><span>Update Browser:</span> Ensure your browser is up-to-date to avoid compatibility issues.</li>
+            <li><span>Contact Support:</span> Reach out to me for assistance using the contact details below.</li>
+        </ul>
+    </section>
+
+    <section class="contact">
+        <h3>Contact Me for Any Server Errors</h3>
+        <p><span>Name:</span> Induma Wijesinghe</p>
+        <p><span>Email:</span> indumawijesinghe@outlook.com</p>
+        <p><span>Phone:</span> 077-434-2801</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Induma Wijesinghe. All rights reserved.</p>
+</footer>
+</body>
+</html>
