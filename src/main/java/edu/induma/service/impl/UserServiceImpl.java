@@ -23,7 +23,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public void add(User user) {
         userRepository.save(objectMapper.convertValue(user, UserEntity.class));
-        binWebSocketHandler.sendMessageToAll(user);
+
     }
 
     @Override

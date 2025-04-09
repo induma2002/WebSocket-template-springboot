@@ -48,18 +48,17 @@ public class BinWebSocketHandler extends TextWebSocketHandler {
         }
     }
 
-    public void sendMessageToAll(User message) {
-        try {
-            String json = objectMapper.writeValueAsString(message);
-            synchronized (sessions) {
-                for (WebSocketSession session : sessions) {
-                    if (session.isOpen()) {
-                        session.sendMessage(new TextMessage(json));
+    public void sendMessageToAll(String message) {
+        synchronized (sessions) {
+            for (WebSocketSession session : sessions) {
+                if (session.isOpen()) {
+                    try {
+                        session.sendMessage(new TextMessage(message));
+                    } catch (Exception e) {
+                        e.printStackTrace(); // you can log this better in production
                     }
                 }
             }
-        } catch (Exception e) {
-            e.printStackTrace();
         }
     }
 }
